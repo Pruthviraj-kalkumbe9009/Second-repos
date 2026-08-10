@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+  <title>__Trip plan__</title>
+  <link rel="stylesheet" href="trip_plan.css">
+</head>
+
+<body>
+  <h1 class="h1heading">Book your trip planning with us</h1>
+  <h2 >Book Your Trip</h2>
+  <form action="/submit-trip" method="post">
+    <!-- Personal Information -->
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Type your name" required><br><br>
+
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" placeholder=" abcXYZ@gmail.com"><br><br>
+
+    <label for="Current_loc">Current location:</label><br>
+    <input type="map" id="Current_loc" name="Current_loc" required placeholder="your location"><br><br>
+
+    <!-- Trip Details -->
+
+    <label for="destination">Destination:</label><br>
+    <input type="text" id="destination" name="destination" required placeholder="Type your destination"><br><br>
+
+
+    <label for="departure">Departure Date:</label><br>
+    <input type="date" id="departure" name="departure" required><br><br>
+
+    <label for="return">Return Date:</label><br>
+    <input type="date" id="return" name="return" required><br><br>
+
+    <label for="travelers">Number of Travelers:</label><br>
+    <input type="number" id="travelers" name="travelers" min="1" required minlength="1" max="10" value="1"><br><br>
+
+    <!-- Preferences -->
+    <label for="preferences">Special Requests / Preferences:</label><br>
+    <textarea id="preferences" name="preferences" rows="4" cols="40"
+      placeholder="Your special request"></textarea><br><br>
+
+    <!-- Submit -->
+    <input type="submit" style="background-color: rgb(187, 187, 236);" value="submit" id="">
+    <input type="reset" style="background-color: rgb(240, 232, 232);" name="reset" id="">
+  </form>
+</body>
+
+</html>caar
